@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+
+    /* font weight  */
+    --fw-reg: 400;
+    --fw-bold: 700;
+}
+
+
+
+/* Global Styles */
+
+ul {
+    list-style-type: none;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 1.3rem;
+    /* display: flex; */
+    text-align: center;
+}
+
+
+
+/* styling supports section  */
+.support {
+    background-color: #060659;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 4px;
+    font-size: 17px;
+
+}
+
+.support .contacts .mail-link {
+    margin-right: 8px;
+}
+
+.support .contacts a {
+    color: white;
+
+}
+
+.support .contacts a:hover {
+    color: red;
+}
+
+.support .donate .donate-btn {
+    border: none;
+    outline: none;
+    background-color: aqua;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 8px;
+    color: black;
+}
+
+.support .donate .donate-btn:hover {
+    background-color: black;
+    color: aqua;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.mobile-support {
+    display: none;
+}
+
+
+
+/* styling header  */
+.header .nav-brand img {
+    width: 100px;
+
+}
+
+.header {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.header .nav-text {
+    grid-column: 3/12;
+}
+
+/* styling navbar  */
+
+.navbar .nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 12px;
+}
+
+.navbar .nav-list .nav-item .nav-link {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    /* border-radius: 18px; */
+    padding: 6px;
+    background-color: #060659;
+    /* border: 1px solid white; */
+}
+
+.navbar .nav-list .nav-item .nav-link:hover {
+
+    background-color: aqua;
+    color: #060659;
+
+    transition: all 0.7s ease;
+}
+
+.navbar .nav-list .nav-item {
+
+    padding: 5px;
+    /* width: 10vw; */
+}
+
+.navbar {
+    background-color: #060659;
+}
+
+/* 
+////////////////////////////////////////////////
+    styling main donation page container from here 
+/////////////////////////////////////////////////
+*/
+
+.dummy {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    grid-column: 2/4;
+}
+
+
+
+.container .logo img {
+    width: 200px;
+}
+
+.container .info {
+
+    /* font-weight: var(--fw-reg); */
+    font-size: 1.2rem;
+    color: red;
+    font-style: italic;
+
+}
+
+.container .qr img {
+    width: 80vh;
+}
+
+.container .qr .appr p{
+    font-size: 1.2rem;
+    text-decoration: solid;
+}
+
+/* styling whatsapp logo */
+.wa-logo {
+    color: white;
+    background-color: rgb(80, 210, 80);
+    border-radius: 19%;
+    /* border: 1px solid #b3b3b3; */
+    /* width: 42px; */
+    /* height: 45px; */
+    padding: 5px;
+    position: fixed;
+    right: 2rem;
+    bottom: 3rem;
+}
+
+.fa.fa-whatsapp.my-float.fa-3x.wa-logo:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    scale: 1.5;
+    transition: all 0.5s ease;
+}
+
+/* styling footer */
+.footer {
+    background-color: #060659;
+    margin-top: 12px;
+    color: white;
+    padding: 14px;
+    position: relative;
+}
+
+.footer img {
+    max-width: 200px;
+}
+
+.footer .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .address p a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: var(--fw-bold);
+}
+
+.footer .address p a:hover {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer .social {
+    display: flex;
+    /* flex-direction: column; */
+    position: absolute;
+    right: 5rem;
+    bottom: 2rem;
+
+
+}
+
+.footer .social li {
+    margin-right: 16px;
+}
+
+.footer .social li a {
+    text-decoration: none;
+}
+
+.footer .social .twitter a {
+    color: blue;
+}
+
+.footer .social .facebook a {
+    color: #8b8bff;
+}
+
+.footer .social .youtube a {
+    color: red;
+}
+
+
+
+.scale:hover {
+    scale: 1.5;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 30px rgb(6, 6, 89);
+
+}
+
+
+/* media queries = */
+
+@media screen and (max-width: 576px) {
+    
+    .support
+    {
+        display: none;
+
+    }
+
+    .mobile-support{
+        display: block;
+    }
+
+    .support .contacts
+    {
+        margin-bottom: 18px;
+    }
+
+    .support .contacts a.mail-link
+    {
+        display: block;
+    }
+
+   
+
+    
+    .header {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 200px;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 24px; */
+        grid-template-rows: repeat(2,25vh);
+        justify-items: center;
+        margin-bottom: 50px;
+    }
+    
+    .header .nav-text
+    {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .navbar .nav-list
+    {
+        flex-direction: column;
+    }
+
+    .navbar .nav-list .nav-item .nav-link{
+        border: none;
+    }
+
+
+
+
+
+
+.heading{
+    width: 100%;
+}
+
+.upcoming{
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .social{
+    position: static;
+    padding: 0;
+}
+
+.dummy
+{
+    display: block;
+
+}
+
+.container .qr img{
+    width: 80vw;
+}
+   
+
+    
+}
