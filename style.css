@@ -280,6 +280,7 @@ body{
     color: white;
   }
 
+
   .news-events{
     /* grid-column: 4; */
     /* border: 1px solid black; */
@@ -537,8 +538,13 @@ body{
         z-index: 10000;
         
     }
-    
-    
+
+
+    /* backdrop filter disables the stcky objects  */
+    body{
+        backdrop-filter: none;
+        background-image: none;
+    }
     
 
    

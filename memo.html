@@ -15,6 +15,15 @@
             position: relative;
         }
 
+        .items
+        {
+            margin: 0 15vw;
+            border: 1px solid black;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            padding: 12px;
+            border-radius: 16px;
+        }
+
         .item
         {
            
@@ -23,6 +32,7 @@
             margin-bottom: 10px;
             border-top: 1px solid black;
             border-bottom: 1px solid black;
+            
         }
         .items .item button{
             outline: none;
@@ -40,6 +50,12 @@
         .buttons
         {
             margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 576px){
+            .items{
+                margin: 12px 0;
+            }
         }
 
       
@@ -94,7 +110,8 @@
         <div class="items">
             
             <div class="item">
-                <h3 class="docname">Memorandum</h3>
+                
+                <h3 class="docname"><i class="fa-solid fa-file"></i> Memorandum</h3>
                 <div class="buttons">
                     
                     <button id="viewBtn">View
@@ -107,7 +124,7 @@
                 </div>
             </div>
             <div class="item">
-                <h3 class="docname">ITR for 2020-21</h3>
+                <h3 class="docname"><i class="fa-solid fa-file"></i> 80G Approval from income tax.</h3>
                 <div class="buttons">
                     <button id="viewITR">View
                     </button>
@@ -117,6 +134,7 @@
                 <div class="itr"></div>
             </div>
         </div>
+        
     </div>
 
     

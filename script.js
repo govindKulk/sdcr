@@ -18,10 +18,5 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 
-let darkBtn = document.getElementById('darkBtn')
-darkBtn.onclick = function() {
-  document.body.classList.toggle('dark-mode');
-}
-
 
 

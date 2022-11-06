@@ -36,3 +36,10 @@ closeMemo.addEventListener('click', function(){
     memoField.innerHTML = '';
     document.querySelector('.memo').style.cssText = "display: none;";
 });
+
+
+// script for the dark mode 
+let darkBtn = document.getElementById('darkBtn')
+darkBtn.onclick = function() {
+  document.body.classList.toggle('dark-mode');
+}
